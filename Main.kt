@@ -14,11 +14,10 @@ fun main() {
 
     val square = Square(0, 0, 2)
     square.resize(2)
-    println(square.area())
-    square.rotate(RotateDirection.Clockwise, 1, 1)
-    println("x: ${square.x}, y: ${square.y}")
 
-    println(f.area())
-    println(f2.area())
-    println(f3.area())
+    println("Площадь прямоугольника: ${f.area()}, круга: ${f2.area()}, квадрата: ${f3.area()}")
+    println("Площадь квадрата после увеличения фигуры: ${square.area()}")
+    println("Координаты квадрата до поворота - (${square.x}, ${square.y})")
+    square.rotate(RotateDirection.Clockwise, 1, 1)
+    println("Координаты квадрата после поворота (${square.x}, ${square.y})")
 }
